@@ -1,0 +1,26 @@
+<permissions>
+    <!-- Shared library required on the device to get Google Dialer updates from
+         Play Store. This will be deprecated once Google Dialer play store
+         updates stop supporting pre-O devices. -->
+    <library name="com.google.android.dialer.support"
+      file="/system/framework/com.google.android.dialer.support.jar" />
+
+    <!-- Starting from Android O and above, this system feature is required for
+         getting Google Dialer play store updates. -->
+    <feature name="com.google.android.apps.dialer.SUPPORTED" />
+    
+    <privapp-permissions package="com.google.android.dialer">
+        <permission name="android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK"/>
+        <permission name="android.permission.CONTROL_INCALL_EXPERIENCE"/>
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.REGISTER_CONNECTION_MANAGER"/>
+        <permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.STOP_APP_SWITCHES"/>
+        <permission name="com.android.voicemail.permission.READ_VOICEMAIL"/>
+        <permission name="com.android.voicemail.permission.WRITE_VOICEMAIL"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </privapp-permissions>
+
+</permissions>
