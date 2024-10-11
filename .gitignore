@@ -1,2 +1,5 @@
 system.img
 system_backup.img
+e2fsck.log
+resize2fs.log
+system_size.log
